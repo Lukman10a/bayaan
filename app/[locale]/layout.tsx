@@ -55,6 +55,7 @@ export default async function RootLayout({
       lang={locale}
       dir={dir}
       className={`${playfair.variable} ${dmSans.variable} ${amiri.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col bg-brand-primary text-brand-text-secondary transition-colors duration-300">
         <NextIntlClientProvider messages={messages}>
