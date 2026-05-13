@@ -2,8 +2,10 @@
 
 import { Card, CardContent } from '@/components/ui/card';
 import { Calendar } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 export default function BlogPage() {
+  const t = useTranslations('BlogPage');
   const posts = [
     { title: "How to Build a Consistent Qur'an Habit", category: "Islamic Studies", date: "Oct 12, 2024", read: "5 min read" },
     { title: "Balancing Online Learning for Kids", category: "Parenting", date: "Oct 08, 2024", read: "4 min read" },
@@ -17,8 +19,8 @@ export default function BlogPage() {
     <main className="flex-1 pt-20 bg-brand-primary min-h-screen">
       <section className="py-24 relative overflow-hidden bg-brand-section border-b border-brand-border">
          <div className="container mx-auto px-4 text-center relative z-10">
-            <h1 className="text-5xl font-heading font-bold text-white mb-6">Knowledge Worth Sharing.</h1>
-            <p className="text-xl text-brand-text-secondary max-w-2xl mx-auto">Insights, tips, and news from Markazul Bayaan.</p>
+            <h1 className="text-5xl font-heading font-bold text-white mb-6">{t('heroTitle')}</h1>
+            <p className="text-xl text-brand-text-secondary max-w-2xl mx-auto">{t('heroSubtitle')}</p>
          </div>
       </section>
 

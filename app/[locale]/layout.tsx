@@ -6,6 +6,7 @@ import { routing } from '@/i18n/routing';
 import { notFound } from 'next/navigation';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { ThemeProvider } from '@/components/ThemeProvider';
 import "../globals.css";
 
 const playfair = Playfair_Display({
@@ -55,11 +56,13 @@ export default async function RootLayout({
       dir={dir}
       className={`${playfair.variable} ${dmSans.variable} ${amiri.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-brand-primary text-brand-text-secondary">
+      <body className="min-h-full flex flex-col bg-brand-primary text-brand-text-secondary transition-colors duration-300">
         <NextIntlClientProvider messages={messages}>
-          <Navbar />
-          {children}
-          <Footer />
+          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+            <Navbar />
+            {children}
+            <Footer />
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>

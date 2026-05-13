@@ -1,6 +1,234 @@
 {
+  "Navbar": {
+    "markazulBayaan": "Markazul Bayaan",
+    "markazulBayaanAr": "مركز البيان",
+    "home": "Home",
+    "about": "About",
+    "islamicCourses": "Islamic Courses",
+    "academicCourses": "Academic Courses",
+    "teachers": "Teachers",
+    "enrolNow": "Enrol Now →",
+    "en": "EN",
+    "ar": "AR",
+    "toggleTheme": "Toggle theme"
+  },
+  "Footer": {
+    "desc": "Authentic Islamic education and world-class academics — for students of every age, from every corner of the world.",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "aboutUs": "About Us",
+    "gallery": "Gallery",
+    "knowledgeHub": "Knowledge Hub",
+    "contact": "Contact",
+    "programmes": "Programmes",
+    "islamicCourses": "Islamic Courses",
+    "academicCourses": "Academic Courses",
+    "rawdatulAtfaal": "Rawdatul Atfaal",
+    "ourTeachers": "Our Teachers",
+    "pricing": "Pricing",
+    "getStarted": "Get Started",
+    "joinCommunity": "Join our global community of learners today.",
+    "enrolNow": "Enrol Now",
+    "contactAdmissions": "Contact Admissions",
+    "rights": "Markazul Bayaan. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
   "HomePage": {
     "title": "Where Knowledge Meets Purpose.",
-    "subtitle": "Authentic Islamic education and world-class academics — for students of every age, from every corner of the world."
+    "subtitle": "Authentic Islamic education and world-class academics — for students of every age, from every corner of the world.",
+    "tag": "Online Islamic School — Worldwide",
+    "enrolNow": "Enrol Now",
+    "exploreCourses": "Explore Our Courses",
+    "allAges": "All Ages Welcome",
+    "maleFemale": "Male & Female Teachers",
+    "worldwide": "Students Worldwide",
+    "stats": {
+      "students": "Students Enrolled",
+      "islamic": "Islamic Subjects",
+      "academic": "Academic Subjects",
+      "teachers": "Qualified Teachers"
+    },
+    "about": {
+      "title": "More Than a School — A Community of Knowledge.",
+      "p1": "At Markazul Bayaan, we believe that education is a lifelong journey. We provide a structured, authentic Islamic curriculum alongside world-class academic subjects, ensuring a comprehensive education for every student.",
+      "p2": "Whether you are a beginner taking your first steps in Arabic, or an advanced student of knowledge studying classical texts, our expert teachers are here to guide you.",
+      "learnMore": "Learn More About Us →"
+    },
+    "programmes": {
+      "tag": "Our Programmes",
+      "title": "A Complete Education for the Whole Person.",
+      "islamicTitle": "Islamic Programme",
+      "islamicSubtitle": "Rooted in authentic scholarship. Delivered with clarity.",
+      "exploreIslamic": "Explore Islamic Courses →",
+      "academicTitle": "Academic Programme",
+      "academicSubtitle": "World-class curricula. Future-ready skills.",
+      "exploreAcademic": "Explore Academic Courses →",
+      "rawdahTitle": "Rawdatul Atfaal",
+      "rawdahSubtitle": "A dedicated wing for our youngest learners (ages 4-8).",
+      "visitRawdah": "Visit Rawdatul Atfaal →"
+    },
+    "features": {
+      "title": "Why Families Choose Us.",
+      "f1Title": "Authentic Scholarship",
+      "f1Desc": "Curriculum sourced from Saudi Arabian Islamic institutions.",
+      "f2Title": "All Ages Welcome",
+      "f2Desc": "From 4-year-olds to adult learners — no one is turned away.",
+      "f3Title": "Gender-Appropriate",
+      "f3Desc": "Male teachers for males, female teachers for females.",
+      "f4Title": "Flexible Scheduling",
+      "f4Desc": "Classes built around your timezone and availability.",
+      "f5Title": "Small Class Sizes",
+      "f5Desc": "Maximum 10 students per group class to ensure quality.",
+      "f6Title": "Global Community",
+      "f6Desc": "Students from across the world learning together."
+    },
+    "courses": {
+      "title": "Start Your Journey Today.",
+      "subtitle": "Explore our most popular courses for students of all ages.",
+      "learnMore": "Learn More →",
+      "levels": {
+        "all": "All Levels",
+        "beg": "Beginner",
+        "int": "Intermediate",
+        "adv": "Advanced",
+        "hs": "High School",
+        "ms": "Middle School"
+      }
+    },
+    "testimonials": {
+      "title": "Words From Our Families."
+    },
+    "teachers": {
+      "title": "Learn From the Best.",
+      "subtitle": "Our teachers are highly qualified specialists dedicated to your success.",
+      "meetAll": "Meet All Our Teachers →",
+      "male": "Male Teacher",
+      "female": "Female Teacher"
+    },
+    "blog": {
+      "title": "From Our Knowledge Hub.",
+      "subtitle": "Articles, tips, and insights from our scholars and educators.",
+      "visitHub": "Visit the Knowledge Hub →"
+    },
+    "cta": {
+      "title": "Begin Your Journey With Us Today.",
+      "subtitle": "Join thousands of students worldwide in the pursuit of authentic knowledge.",
+      "enrol": "Enrol Now →",
+      "contact": "Contact Us"
+    }
+  },
+  "AboutPage": {
+    "heroTitle": "Our Story, Our Mission.",
+    "heroSubtitle": "Connecting students worldwide to authentic Islamic scholarship and academic excellence.",
+    "quote": "\"Education is not merely the acquisition of facts, but the illumination of the heart with truth and the mind with purpose.\"",
+    "legacyTitle": "A Legacy of Knowledge",
+    "legacyP1": "Markazul Bayaan was founded with a singular vision: to make authentic, structured Islamic education accessible to families regardless of their geographic location. We recognized that while the internet is filled with information, true knowledge requires structured curriculums, qualified teachers, and an environment of Tarbiyah.",
+    "legacyP2": "Today, we serve students across 5 continents, offering a dual curriculum that ensures our students do not have to choose between their Deen and their Dunya. They can excel in both.",
+    "valuesTitle": "Our Core Values",
+    "v1Title": "Authenticity",
+    "v1Desc": "Curriculums strictly aligned with the understanding of the Salaf.",
+    "v2Title": "Excellence",
+    "v2Desc": "World-class standards in both Islamic and Academic subjects.",
+    "v3Title": "Tarbiyah",
+    "v3Desc": "Nurturing character, not just transferring information."
+  },
+  "IslamicCoursesPage": {
+    "heroTitle": "Authentic Islamic Education.",
+    "heroSubtitle": "Rooted in classical scholarship, structured for the modern learner.",
+    "curriculumTitle": "Our Curriculum Source",
+    "curriculumDesc": "All our Islamic curriculums are sourced directly from recognized institutions in Saudi Arabia. We ensure that every text taught is authentic, and every teacher is thoroughly vetted and qualified to teach their respective subjects.",
+    "stages": "Course Stages",
+    "tuition": "Tuition Fees",
+    "private": "1-on-1 Private",
+    "group": "Group Class",
+    "mo": "/mo",
+    "maxStudents": "Max 5 students",
+    "enrol": "Enrol Now"
+  },
+  "AcademicCoursesPage": {
+    "heroTitle": "World-Class Academics.",
+    "heroSubtitle": "Globally recognised standards, preparing students for the future.",
+    "explore": "Explore Academic Courses",
+    "levels": "Levels:",
+    "format": "Format:",
+    "enrol": "Enrol"
+  },
+  "TeachersPage": {
+    "heroTitle": "Our Scholars and Educators.",
+    "heroSubtitle": "Vetted, highly qualified, and dedicated to your success.",
+    "maleTeacher": "Male Teacher",
+    "femaleTeacher": "Female Teacher"
+  },
+  "PricingPage": {
+    "heroTitle": "Transparent, Accessible Pricing.",
+    "heroSubtitle": "Invest in your hereafter and your worldly success.",
+    "group": "Group Course",
+    "groupDesc": "Perfect for collaborative learning",
+    "mo": "/month",
+    "private": "1-on-1 Tuition",
+    "popular": "MOST POPULAR",
+    "privateDesc": "Personalised attention and pace",
+    "bundle": "Full Bundle",
+    "bundleDesc": "Complete homeschool solution",
+    "select": "Select Plan",
+    "groupFeatures": {
+      "f1": "Maximum 10 students",
+      "f2": "Live interactive sessions",
+      "f3": "Access to recordings",
+      "f4": "Course materials included"
+    },
+    "privateFeatures": {
+      "f1": "Dedicated tutor",
+      "f2": "Flexible scheduling",
+      "f3": "Customised curriculum pace",
+      "f4": "Weekly progress reports",
+      "f5": "Direct tutor access"
+    },
+    "bundleFeatures": {
+      "f1": "All core Islamic subjects",
+      "f2": "Maths & Science included",
+      "f3": "Dedicated academic advisor",
+      "f4": "Sibling discounts apply"
+    }
+  },
+  "GalleryPage": {
+    "heroTitle": "A Glimpse Into Our Community.",
+    "heroSubtitle": "Student achievements, class highlights, and events.",
+    "placeholder": "Gallery masonry grid will be displayed here."
+  },
+  "BlogPage": {
+    "heroTitle": "Knowledge Worth Sharing.",
+    "heroSubtitle": "Insights, tips, and news from Markazul Bayaan."
+  },
+  "RegisterPage": {
+    "heroTitle": "Begin Your Journey.",
+    "heroSubtitle": "Register for a course or a full programme today.",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email Address",
+    "select": "Select Course / Programme",
+    "option1": "Select an option...",
+    "option2": "Full Islamic Programme",
+    "option3": "Full Academic Programme",
+    "option4": "Individual Course - Qur'an",
+    "option5": "Individual Course - Arabic",
+    "notes": "Additional Notes",
+    "notesPlaceholder": "Any specific requirements or timezone preferences?",
+    "submit": "Submit Registration"
+  },
+  "ContactPage": {
+    "heroTitle": "We Would Love to Hear From You.",
+    "heroSubtitle": "Get in touch with our support team for any inquiries.",
+    "whatsapp": "WhatsApp",
+    "msg": "Message Us",
+    "email": "Email",
+    "sendEmail": "Send Email",
+    "sendMsg": "Send us a message",
+    "name": "Name",
+    "subject": "Subject",
+    "message": "Message",
+    "submit": "Send Message",
+    "promise": "We respond within 24 hours, in shaa Allah."
   }
 }

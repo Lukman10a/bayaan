@@ -1,22 +1,52 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-primary: #09111F;
-  --color-brand-section: #0E1E38;
-  --color-brand-card: #131B2E;
-  --color-brand-accent: #C9972A;
-  --color-brand-amber: #E8B84B;
-  --color-brand-green: #1D5C3A;
-  --color-brand-text: #FFFFFF;
-  --color-brand-text-secondary: #FDF8EE;
-  --color-brand-text-muted: #8A9BB0;
+  --color-brand-primary: var(--bg-primary);
+  --color-brand-section: var(--bg-section);
+  --color-brand-card: var(--bg-card);
+  --color-brand-accent: var(--color-accent);
+  --color-brand-amber: var(--color-amber);
+  --color-brand-green: var(--color-green);
+  --color-brand-text: var(--text-primary);
+  --color-brand-text-secondary: var(--text-secondary);
+  --color-brand-text-muted: var(--text-muted);
 
-  --color-brand-border: rgba(201, 151, 42, 0.15);
-  --color-brand-glow: rgba(201, 151, 42, 0.10);
+  --color-brand-border: var(--border-color);
+  --color-brand-glow: var(--glow-color);
 
   --font-heading: var(--font-heading), "Playfair Display", serif;
   --font-body: var(--font-body), "DM Sans", sans-serif;
   --font-arabic: var(--font-arabic), "Amiri", serif;
+}
+
+:root {
+  /* Light Mode Palette (Premium Cream/White) */
+  --bg-primary: #FDF8EE;
+  --bg-section: #F5F0E6;
+  --bg-card: #FFFFFF;
+  --color-accent: #C9972A;
+  --color-amber: #E8B84B;
+  --color-green: #1D5C3A;
+  --text-primary: #09111F;
+  --text-secondary: #131B2E;
+  --text-muted: #64748B;
+  --border-color: rgba(201, 151, 42, 0.2);
+  --glow-color: rgba(201, 151, 42, 0.10);
+}
+
+.dark {
+  /* Dark Mode Palette (Original Midnight Navy) */
+  --bg-primary: #09111F;
+  --bg-section: #0E1E38;
+  --bg-card: #131B2E;
+  --color-accent: #C9972A;
+  --color-amber: #E8B84B;
+  --color-green: #1D5C3A;
+  --text-primary: #FFFFFF;
+  --text-secondary: #FDF8EE;
+  --text-muted: #8A9BB0;
+  --border-color: rgba(201, 151, 42, 0.15);
+  --glow-color: rgba(201, 151, 42, 0.10);
 }
 
 body {

@@ -1,7 +1,11 @@
 import { Link } from '@/i18n/routing'
 import { Button } from '@/components/ui/button'
+import { useTranslations } from 'next-intl'
 
 export function Footer() {
+  const t = useTranslations('Footer')
+  const navT = useTranslations('Navbar')
+
   return (
     <footer className="bg-brand-section pt-20 pb-10 border-t border-brand-border mt-auto">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -12,12 +16,12 @@ export function Footer() {
                 <span className="text-brand-accent font-bold font-heading text-xl">M</span>
               </div>
               <div>
-                <span className="text-white font-heading font-bold text-2xl block leading-tight">Markazul Bayaan</span>
-                <span className="text-brand-accent font-arabic text-md block leading-tight">مركز البيان</span>
+                <span className="text-white font-heading font-bold text-2xl block leading-tight">{navT('markazulBayaan')}</span>
+                <span className="text-brand-accent font-arabic text-md block leading-tight">{navT('markazulBayaanAr')}</span>
               </div>
             </Link>
             <p className="text-brand-text-muted text-sm leading-relaxed mb-6">
-              Authentic Islamic education and world-class academics — for students of every age, from every corner of the world.
+              {t('desc')}
             </p>
             <div className="flex space-x-4 rtl:space-x-reverse">
               <a href="#" className="w-10 h-10 rounded-full bg-brand-primary flex items-center justify-center text-brand-text-secondary hover:text-brand-accent transition-colors border border-brand-border">
@@ -32,42 +36,42 @@ export function Footer() {
           </div>
           
           <div>
-            <h4 className="text-white font-heading font-semibold text-lg mb-6">Quick Links</h4>
+            <h4 className="text-white font-heading font-semibold text-lg mb-6">{t('quickLinks')}</h4>
             <ul className="space-y-3">
-              <li><Link href="/" className="text-brand-text-muted hover:text-brand-accent transition-colors">Home</Link></li>
-              <li><Link href="/about" className="text-brand-text-muted hover:text-brand-accent transition-colors">About Us</Link></li>
-              <li><Link href="/gallery" className="text-brand-text-muted hover:text-brand-accent transition-colors">Gallery</Link></li>
-              <li><Link href="/blog" className="text-brand-text-muted hover:text-brand-accent transition-colors">Knowledge Hub</Link></li>
-              <li><Link href="/contact" className="text-brand-text-muted hover:text-brand-accent transition-colors">Contact</Link></li>
+              <li><Link href="/" className="text-brand-text-muted hover:text-brand-accent transition-colors">{t('home')}</Link></li>
+              <li><Link href="/about" className="text-brand-text-muted hover:text-brand-accent transition-colors">{t('aboutUs')}</Link></li>
+              <li><Link href="/gallery" className="text-brand-text-muted hover:text-brand-accent transition-colors">{t('gallery')}</Link></li>
+              <li><Link href="/blog" className="text-brand-text-muted hover:text-brand-accent transition-colors">{t('knowledgeHub')}</Link></li>
+              <li><Link href="/contact" className="text-brand-text-muted hover:text-brand-accent transition-colors">{t('contact')}</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-white font-heading font-semibold text-lg mb-6">Programmes</h4>
+            <h4 className="text-white font-heading font-semibold text-lg mb-6">{t('programmes')}</h4>
             <ul className="space-y-3">
-              <li><Link href="/islamic-courses" className="text-brand-text-muted hover:text-brand-accent transition-colors">Islamic Courses</Link></li>
-              <li><Link href="/academic-courses" className="text-brand-text-muted hover:text-brand-accent transition-colors">Academic Courses</Link></li>
-              <li><a href="https://rawdahkids.org" target="_blank" rel="noreferrer" className="text-brand-text-muted hover:text-brand-accent transition-colors flex items-center gap-2">Rawdatul Atfaal <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a></li>
-              <li><Link href="/teachers" className="text-brand-text-muted hover:text-brand-accent transition-colors">Our Teachers</Link></li>
-              <li><Link href="/pricing" className="text-brand-text-muted hover:text-brand-accent transition-colors">Pricing</Link></li>
+              <li><Link href="/islamic-courses" className="text-brand-text-muted hover:text-brand-accent transition-colors">{t('islamicCourses')}</Link></li>
+              <li><Link href="/academic-courses" className="text-brand-text-muted hover:text-brand-accent transition-colors">{t('academicCourses')}</Link></li>
+              <li><a href="https://rawdahkids.org" target="_blank" rel="noreferrer" className="text-brand-text-muted hover:text-brand-accent transition-colors flex items-center gap-2">{t('rawdatulAtfaal')} <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a></li>
+              <li><Link href="/teachers" className="text-brand-text-muted hover:text-brand-accent transition-colors">{t('ourTeachers')}</Link></li>
+              <li><Link href="/pricing" className="text-brand-text-muted hover:text-brand-accent transition-colors">{t('pricing')}</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-white font-heading font-semibold text-lg mb-6">Get Started</h4>
-            <p className="text-brand-text-muted text-sm mb-4">Join our global community of learners today.</p>
-            <Button className="w-full justify-center mb-4">Enrol Now</Button>
-            <Button variant="ghost" className="w-full justify-center">Contact Admissions</Button>
+            <h4 className="text-white font-heading font-semibold text-lg mb-6">{t('getStarted')}</h4>
+            <p className="text-brand-text-muted text-sm mb-4">{t('joinCommunity')}</p>
+            <Button className="w-full justify-center mb-4">{t('enrolNow')}</Button>
+            <Button variant="ghost" className="w-full justify-center">{t('contactAdmissions')}</Button>
           </div>
         </div>
         
         <div className="border-t border-brand-border py-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-brand-text-muted text-sm">
-            &copy; {new Date().getFullYear()} Markazul Bayaan. All rights reserved.
+            &copy; {new Date().getFullYear()} {t('rights')}
           </p>
           <div className="flex space-x-6 rtl:space-x-reverse text-sm">
-            <Link href="/privacy" className="text-brand-text-muted hover:text-brand-accent transition-colors">Privacy Policy</Link>
-            <Link href="/terms" className="text-brand-text-muted hover:text-brand-accent transition-colors">Terms of Service</Link>
+            <Link href="/privacy" className="text-brand-text-muted hover:text-brand-accent transition-colors">{t('privacy')}</Link>
+            <Link href="/terms" className="text-brand-text-muted hover:text-brand-accent transition-colors">{t('terms')}</Link>
           </div>
         </div>
       </div>

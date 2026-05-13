@@ -3,8 +3,10 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { MonitorPlay, CheckCircle, ArrowRight } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 export default function AcademicCoursesPage() {
+  const t = useTranslations('AcademicCoursesPage');
   const courses = [
     { title: "IGCSE Mathematics", desc: "Complete preparation for Edexcel & Cambridge exams.", levels: "High School", format: "Group & 1-on-1" },
     { title: "General Sciences", desc: "Physics, Chemistry, and Biology taught with excellence.", levels: "Middle & High School", format: "Group & 1-on-1" },
@@ -15,9 +17,9 @@ export default function AcademicCoursesPage() {
     <main className="flex-1 pt-20 bg-brand-primary">
       <section className="py-24 relative overflow-hidden bg-brand-section border-b border-brand-accent/20">
          <div className="container mx-auto px-4 text-center relative z-10">
-            <h1 className="text-5xl md:text-6xl font-heading font-bold text-white mb-6">World-Class Academics.</h1>
-            <p className="text-xl text-brand-text-secondary max-w-2xl mx-auto mb-8">Globally recognised standards, preparing students for the future.</p>
-            <Button size="lg">Explore Academic Courses</Button>
+            <h1 className="text-5xl md:text-6xl font-heading font-bold text-white mb-6">{t('heroTitle')}</h1>
+            <p className="text-xl text-brand-text-secondary max-w-2xl mx-auto mb-8">{t('heroSubtitle')}</p>
+            <Button size="lg">{t('explore')}</Button>
          </div>
       </section>
 
@@ -35,11 +37,11 @@ export default function AcademicCoursesPage() {
                         </div>
                         <p className="text-brand-text-muted mb-8 flex-grow">{course.desc}</p>
                         <div className="space-y-3 mb-8 text-sm">
-                           <div className="flex items-center gap-2 text-brand-text-secondary"><CheckCircle className="w-4 h-4 text-brand-accent"/> Levels: {course.levels}</div>
-                           <div className="flex items-center gap-2 text-brand-text-secondary"><CheckCircle className="w-4 h-4 text-brand-accent"/> Format: {course.format}</div>
+                           <div className="flex items-center gap-2 text-brand-text-secondary"><CheckCircle className="w-4 h-4 text-brand-accent"/> {t('levels')} {course.levels}</div>
+                           <div className="flex items-center gap-2 text-brand-text-secondary"><CheckCircle className="w-4 h-4 text-brand-accent"/> {t('format')} {course.format}</div>
                         </div>
                         <Button className="w-full justify-between group">
-                           Enrol <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                           {t('enrol')} <ArrowRight className="w-4 h-4 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 rtl:rotate-180 transition-transform" />
                         </Button>
                      </CardContent>
                   </Card>
