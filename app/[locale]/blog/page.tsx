@@ -19,7 +19,7 @@ export default function BlogPage() {
     <main className="flex-1 pt-20 bg-brand-primary min-h-screen">
       <section className="py-24 relative overflow-hidden bg-brand-section border-b border-brand-border">
          <div className="container mx-auto px-4 text-center relative z-10">
-            <h1 className="text-5xl font-heading font-bold text-white mb-6">{t('heroTitle')}</h1>
+            <h1 className="text-5xl font-heading font-bold text-brand-text mb-6">{t('heroTitle')}</h1>
             <p className="text-xl text-brand-text-secondary max-w-2xl mx-auto">{t('heroSubtitle')}</p>
          </div>
       </section>
@@ -31,7 +31,7 @@ export default function BlogPage() {
                   <Card key={i} className="h-full bg-brand-section group cursor-pointer hover:border-brand-accent/50 transition-colors">
                      <CardContent className="p-8 flex flex-col h-full">
                         <div className="text-xs font-bold text-brand-accent tracking-wider uppercase mb-4">{post.category}</div>
-                        <h4 className="text-xl font-bold text-white mb-4 group-hover:text-brand-accent transition-colors leading-tight">{post.title}</h4>
+                        <h4 className="text-xl font-bold text-brand-text mb-4 group-hover:text-brand-accent transition-colors leading-tight">{post.title}</h4>
                         <div className="mt-auto flex items-center justify-between text-sm text-brand-text-muted pt-6 border-t border-brand-border">
                            <div className="flex items-center gap-2"><Calendar className="w-4 h-4" /> {post.date}</div>
                            <div>{post.read}</div>

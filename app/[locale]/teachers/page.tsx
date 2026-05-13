@@ -19,7 +19,7 @@ export default function TeachersPage() {
     <main className="flex-1 pt-20 bg-brand-primary">
       <section className="py-24 relative overflow-hidden bg-brand-section border-b border-brand-accent/20">
          <div className="container mx-auto px-4 text-center relative z-10">
-            <h1 className="text-5xl font-heading font-bold text-white mb-6">{t('heroTitle')}</h1>
+            <h1 className="text-5xl font-heading font-bold text-brand-text mb-6">{t('heroTitle')}</h1>
             <p className="text-xl text-brand-text-secondary max-w-2xl mx-auto">{t('heroSubtitle')}</p>
          </div>
       </section>
@@ -35,7 +35,7 @@ export default function TeachersPage() {
                               <User className="w-16 h-16 text-brand-text-muted" />
                            </div>
                         </div>
-                        <h4 className="text-2xl font-bold text-white mb-2">{teacher.name}</h4>
+                        <h4 className="text-2xl font-bold text-brand-text mb-2">{teacher.name}</h4>
                         <div className="text-brand-accent font-medium mb-4">{teacher.subject}</div>
                         <span className="inline-block px-4 py-1 bg-brand-primary rounded-full text-xs font-bold text-brand-text-secondary mb-6 border border-brand-border">
                            {teacher.gender === 'Male' ? t('maleTeacher') : t('femaleTeacher')}

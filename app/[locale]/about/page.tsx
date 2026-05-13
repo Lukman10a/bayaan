@@ -12,7 +12,7 @@ export default function AboutPage() {
       <section className="py-24 relative overflow-hidden bg-brand-section border-b border-brand-border">
          <div className="absolute inset-0 opacity-5 pointer-events-none" />
          <div className="container mx-auto px-4 text-center relative z-10">
-            <h1 className="text-5xl md:text-6xl font-heading font-bold text-white mb-6">{t('heroTitle')}</h1>
+            <h1 className="text-5xl md:text-6xl font-heading font-bold text-brand-text mb-6">{t('heroTitle')}</h1>
             <p className="text-xl text-brand-text-secondary max-w-2xl mx-auto">{t('heroSubtitle')}</p>
          </div>
       </section>
@@ -27,7 +27,7 @@ export default function AboutPage() {
 
             <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
                <div>
-                  <h2 className="text-3xl font-heading font-bold text-white mb-6">{t('legacyTitle')}</h2>
+                  <h2 className="text-3xl font-heading font-bold text-brand-text mb-6">{t('legacyTitle')}</h2>
                   <p className="text-brand-text-muted leading-relaxed mb-6">
                      {t('legacyP1')}
                   </p>
@@ -41,7 +41,7 @@ export default function AboutPage() {
             </div>
 
             <div className="mb-24">
-               <h2 className="text-3xl font-heading font-bold text-white text-center mb-12">{t('valuesTitle')}</h2>
+               <h2 className="text-3xl font-heading font-bold text-brand-text text-center mb-12">{t('valuesTitle')}</h2>
                <div className="grid md:grid-cols-3 gap-6">
                   {[
                      { icon: Shield, title: t('v1Title'), desc: t('v1Desc') },
@@ -51,7 +51,7 @@ export default function AboutPage() {
                      <Card key={i} className="bg-brand-section">
                         <CardContent className="p-8 text-center">
                            <val.icon className="w-12 h-12 text-brand-accent mx-auto mb-6" />
-                           <h4 className="text-xl font-bold text-white mb-3">{val.title}</h4>
+                           <h4 className="text-xl font-bold text-brand-text mb-3">{val.title}</h4>
                            <p className="text-brand-text-muted">{val.desc}</p>
                         </CardContent>
                      </Card>

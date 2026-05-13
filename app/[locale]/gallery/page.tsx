@@ -8,7 +8,7 @@ export default function GalleryPage() {
     <main className="flex-1 pt-20 bg-brand-primary min-h-screen">
       <section className="py-24 relative overflow-hidden bg-brand-section border-b border-brand-border">
          <div className="container mx-auto px-4 text-center relative z-10">
-            <h1 className="text-5xl font-heading font-bold text-white mb-6">{t('heroTitle')}</h1>
+            <h1 className="text-5xl font-heading font-bold text-brand-text mb-6">{t('heroTitle')}</h1>
             <p className="text-xl text-brand-text-secondary max-w-2xl mx-auto">{t('heroSubtitle')}</p>
          </div>
       </section>

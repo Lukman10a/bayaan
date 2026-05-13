@@ -35,7 +35,7 @@ export function FeaturedCoursesSection() {
     <section className="py-24 bg-brand-section">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-heading font-bold text-white mb-4">{t('title')}</h2>
+          <h2 className="text-4xl font-heading font-bold text-brand-text mb-4">{t('title')}</h2>
           <p className="text-brand-text-muted">{t('subtitle')}</p>
         </div>
         
@@ -50,11 +50,11 @@ export function FeaturedCoursesSection() {
                   <div className="mb-4 bg-brand-accent/10 w-12 h-12 rounded-full flex items-center justify-center relative z-10">
                     <course.icon className="w-6 h-6 text-brand-accent" />
                   </div>
-                  <h4 className="text-xl font-bold text-white mb-2 relative z-10">{course.title}</h4>
+                  <h4 className="text-xl font-bold text-brand-text mb-2 relative z-10">{course.title}</h4>
                   <p className="text-brand-text-muted mb-6 relative z-10 flex-grow">{course.desc}</p>
                   <div className="flex items-center justify-between mt-auto relative z-10">
                     <span className="text-xs font-bold text-brand-accent bg-brand-accent/10 px-3 py-1 rounded-full">{course.level}</span>
-                    <span className="text-sm font-bold text-white group-hover:text-brand-accent transition-colors">{t('learnMore')}</span>
+                    <span className="text-sm font-bold text-brand-text group-hover:text-brand-accent transition-colors">{t('learnMore')}</span>
                   </div>
                 </CardContent>
               </Card>
@@ -78,7 +78,7 @@ export function TestimonialsSection() {
     <section className="py-24 bg-brand-primary overflow-hidden">
       <div className="container mx-auto px-4 mb-16">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-heading font-bold text-white">{t('title')}</h2>
+          <h2 className="text-4xl font-heading font-bold text-brand-text">{t('title')}</h2>
         </div>
         
         <div className="grid md:grid-cols-3 gap-6">
@@ -95,7 +95,7 @@ export function TestimonialsSection() {
                       {test.author.charAt(0)}
                     </div>
                     <div>
-                      <div className="text-white font-bold">{test.author}</div>
+                      <div className="text-brand-text font-bold">{test.author}</div>
                       <div className="text-sm text-brand-text-muted flex items-center gap-1">
                         <MapPin className="w-3 h-3" /> {test.country}
                       </div>
@@ -141,7 +141,7 @@ export function TeachersSection() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div>
-            <h2 className="text-4xl font-heading font-bold text-white mb-4">{t('title')}</h2>
+            <h2 className="text-4xl font-heading font-bold text-brand-text mb-4">{t('title')}</h2>
             <p className="text-brand-text-muted max-w-2xl">{t('subtitle')}</p>
           </div>
           <Button variant="ghost">{t('meetAll')}</Button>
@@ -157,7 +157,7 @@ export function TeachersSection() {
                       <User className="w-10 h-10 text-brand-text-muted" />
                     </div>
                   </div>
-                  <h4 className="text-xl font-bold text-white mb-1">{teacher.name}</h4>
+                  <h4 className="text-xl font-bold text-brand-text mb-1">{teacher.name}</h4>
                   <div className="text-brand-accent font-medium mb-3">{teacher.subject}</div>
                   <span className="inline-block px-3 py-1 bg-brand-section rounded-full text-xs font-bold text-brand-text-secondary mb-4 border border-brand-border">
                     {teacher.gender === 'Male' ? t('male') : t('female')}
@@ -186,7 +186,7 @@ export function BlogPreviewSection() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div>
-            <h2 className="text-4xl font-heading font-bold text-white mb-4">{t('title')}</h2>
+            <h2 className="text-4xl font-heading font-bold text-brand-text mb-4">{t('title')}</h2>
             <p className="text-brand-text-muted max-w-2xl">{t('subtitle')}</p>
           </div>
           <Button variant="ghost">{t('visitHub')}</Button>
@@ -198,7 +198,7 @@ export function BlogPreviewSection() {
               <Card className="h-full bg-brand-section group cursor-pointer hover:border-brand-accent/50 transition-colors">
                 <CardContent className="p-8 flex flex-col h-full">
                   <div className="text-xs font-bold text-brand-accent tracking-wider uppercase mb-4">{post.category}</div>
-                  <h4 className="text-xl font-bold text-white mb-4 group-hover:text-brand-accent transition-colors leading-tight">{post.title}</h4>
+                  <h4 className="text-xl font-bold text-brand-text mb-4 group-hover:text-brand-accent transition-colors leading-tight">{post.title}</h4>
                   <div className="mt-auto flex items-center justify-between text-sm text-brand-text-muted pt-6 border-t border-brand-border">
                     <div className="flex items-center gap-2"><Calendar className="w-4 h-4" /> {post.date}</div>
                     <div>{post.read}</div>

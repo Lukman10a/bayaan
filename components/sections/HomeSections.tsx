@@ -65,7 +65,7 @@ export function HeroSection() {
               <span className="text-xs font-bold text-brand-accent uppercase tracking-wider">{t('tag')}</span>
             </motion.div>
             
-            <h1 ref={heroTextRef} className="text-5xl md:text-7xl font-heading font-bold text-white leading-[1.1] mb-6 tracking-tight">
+            <h1 ref={heroTextRef} className="text-5xl md:text-7xl font-heading font-bold text-brand-text leading-[1.1] mb-6 tracking-tight">
               {t('title')}
             </h1>
             
@@ -121,7 +121,7 @@ export function StatsSection() {
           ].map((stat, i) => (
             <motion.div key={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInVariant} className="text-center px-4">
               <div className="text-4xl md:text-5xl font-heading font-bold text-brand-accent mb-2">{stat.value}</div>
-              <div className="text-sm text-white font-medium uppercase tracking-wider">{stat.label}</div>
+              <div className="text-sm text-brand-text font-medium uppercase tracking-wider">{stat.label}</div>
             </motion.div>
           ))}
         </div>
@@ -137,7 +137,7 @@ export function AboutSnapshot() {
        <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
              <motion.div initial="hidden" whileInView="visible" viewport={{once: true}} variants={staggerContainer}>
-                <motion.h2 variants={fadeInVariant} className="text-4xl md:text-5xl font-heading font-bold text-white mb-8 leading-tight" dangerouslySetInnerHTML={{ __html: t('title') }}>
+                <motion.h2 variants={fadeInVariant} className="text-4xl md:text-5xl font-heading font-bold text-brand-text mb-8 leading-tight" dangerouslySetInnerHTML={{ __html: t('title') }}>
                 </motion.h2>
                 <motion.div variants={fadeInVariant} className="pl-6 border-l-2 border-brand-accent mb-6 rtl:pr-6 rtl:pl-0 rtl:border-l-0 rtl:border-r-2">
                    <p className="text-lg text-brand-text-secondary leading-relaxed">
@@ -175,7 +175,7 @@ export function ProgrammesSection() {
       <div className="container mx-auto px-4">
         <motion.div initial="hidden" whileInView="visible" viewport={{once: true}} variants={staggerContainer} className="text-center mb-16 max-w-3xl mx-auto">
           <div className="text-brand-accent font-mono text-sm tracking-widest uppercase mb-4">{t('tag')}</div>
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-white">{t('title')}</h2>
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-brand-text">{t('title')}</h2>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-8">
@@ -185,7 +185,7 @@ export function ProgrammesSection() {
                <CardContent className="p-10 relative z-10 flex flex-col h-full">
                  <div className="mb-6"><BookOpen className="w-12 h-12 text-brand-accent" /></div>
                  <h3 className="text-3xl font-heading font-bold text-brand-accent mb-4">{t('islamicTitle')}</h3>
-                 <p className="text-white text-lg mb-8 italic">{t('islamicSubtitle')}</p>
+                 <p className="text-brand-text text-lg mb-8 italic">{t('islamicSubtitle')}</p>
                  <div className="flex flex-wrap gap-2 mb-10">
                    {['Qur\'an', 'Arabic', 'Hadith', 'Tawheed', 'Fiqh', 'Seerah', 'Mutoon'].map(subject => (
                      <span key={subject} className="px-3 py-1 bg-black/30 rounded-full text-sm text-brand-text-secondary">{subject}</span>
@@ -203,7 +203,7 @@ export function ProgrammesSection() {
                <CardContent className="p-10 relative z-10 flex flex-col h-full">
                  <div className="mb-6"><MonitorPlay className="w-12 h-12 text-brand-accent" /></div>
                  <h3 className="text-3xl font-heading font-bold text-brand-accent mb-4">{t('academicTitle')}</h3>
-                 <p className="text-white text-lg mb-8 italic">{t('academicSubtitle')}</p>
+                 <p className="text-brand-text text-lg mb-8 italic">{t('academicSubtitle')}</p>
                  <div className="flex flex-wrap gap-2 mb-10">
                    {['Mathematics', 'Sciences', 'Programming'].map(subject => (
                      <span key={subject} className="px-3 py-1 bg-white/5 rounded-full text-sm text-brand-text-secondary">{subject}</span>
@@ -225,7 +225,7 @@ export function ProgrammesSection() {
                   <Heart className="w-8 h-8 text-brand-accent" />
                 </div>
                 <div>
-                  <h4 className="text-2xl font-heading font-bold text-white mb-2">{t('rawdahTitle')}</h4>
+                  <h4 className="text-2xl font-heading font-bold text-brand-text mb-2">{t('rawdahTitle')}</h4>
                   <p className="text-brand-text-muted">{t('rawdahSubtitle')}</p>
                 </div>
               </div>
@@ -255,7 +255,7 @@ export function FeaturesSection() {
     <section className="py-24 bg-brand-primary">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-heading font-bold text-white">{t('title')}</h2>
+          <h2 className="text-4xl font-heading font-bold text-brand-text">{t('title')}</h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, i) => (
@@ -263,7 +263,7 @@ export function FeaturesSection() {
               <Card className="h-full border-t-2 border-t-brand-primary hover:border-t-brand-accent transition-all duration-300">
                 <CardContent className="p-8">
                   <feature.icon className="w-10 h-10 text-brand-accent mb-6" />
-                  <h4 className="text-xl font-bold text-white mb-3">{feature.title}</h4>
+                  <h4 className="text-xl font-bold text-brand-text mb-3">{feature.title}</h4>
                   <p className="text-brand-text-muted">{feature.desc}</p>
                 </CardContent>
               </Card>
@@ -281,7 +281,7 @@ export function CTASection() {
     <section className="py-24 relative overflow-hidden bg-brand-primary border-t border-brand-border">
       <div className="absolute inset-0 bg-gradient-to-br from-brand-accent/20 to-brand-green/20 opacity-30 mix-blend-overlay" />
       <div className="container mx-auto px-4 relative z-10 text-center max-w-3xl">
-        <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">{t('title')}</h2>
+        <h2 className="text-4xl md:text-5xl font-heading font-bold text-brand-text mb-6">{t('title')}</h2>
         <p className="text-xl text-brand-text-secondary mb-10">{t('subtitle')}</p>
         <div className="flex flex-wrap justify-center gap-4">
           <Button size="lg">{t('enrol')}</Button>

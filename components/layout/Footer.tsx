@@ -16,7 +16,7 @@ export function Footer() {
                 <span className="text-brand-accent font-bold font-heading text-xl">M</span>
               </div>
               <div>
-                <span className="text-white font-heading font-bold text-2xl block leading-tight">{navT('markazulBayaan')}</span>
+                <span className="text-brand-text font-heading font-bold text-2xl block leading-tight">{navT('markazulBayaan')}</span>
                 <span className="text-brand-accent font-arabic text-md block leading-tight">{navT('markazulBayaanAr')}</span>
               </div>
             </Link>
@@ -36,7 +36,7 @@ export function Footer() {
           </div>
           
           <div>
-            <h4 className="text-white font-heading font-semibold text-lg mb-6">{t('quickLinks')}</h4>
+            <h4 className="text-brand-text font-heading font-semibold text-lg mb-6">{t('quickLinks')}</h4>
             <ul className="space-y-3">
               <li><Link href="/" className="text-brand-text-muted hover:text-brand-accent transition-colors">{t('home')}</Link></li>
               <li><Link href="/about" className="text-brand-text-muted hover:text-brand-accent transition-colors">{t('aboutUs')}</Link></li>
@@ -47,7 +47,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-heading font-semibold text-lg mb-6">{t('programmes')}</h4>
+            <h4 className="text-brand-text font-heading font-semibold text-lg mb-6">{t('programmes')}</h4>
             <ul className="space-y-3">
               <li><Link href="/islamic-courses" className="text-brand-text-muted hover:text-brand-accent transition-colors">{t('islamicCourses')}</Link></li>
               <li><Link href="/academic-courses" className="text-brand-text-muted hover:text-brand-accent transition-colors">{t('academicCourses')}</Link></li>
@@ -58,7 +58,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-heading font-semibold text-lg mb-6">{t('getStarted')}</h4>
+            <h4 className="text-brand-text font-heading font-semibold text-lg mb-6">{t('getStarted')}</h4>
             <p className="text-brand-text-muted text-sm mb-4">{t('joinCommunity')}</p>
             <Button className="w-full justify-center mb-4">{t('enrolNow')}</Button>
             <Button variant="ghost" className="w-full justify-center">{t('contactAdmissions')}</Button>
